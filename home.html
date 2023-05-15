@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=expose@500,700,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inkling/Home</title>
+  </head>
+  <body>
+    <button id="back-to-top-btn"><img src="images/arrow-up.png" /></button>
+    <header class="header">
+      <nav>
+        <section class="logo">
+          <img src="images/logo_color.png" class="logo__img" />
+          <p class="logo__text">INKLING</p>
+        </section>
+        <section class="menu">
+          <ul class="menu__bar">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#promos">Bundles</a></li>
+            <li>
+              <a href="#offers">Prints</a>
+              <ul>
+                <li><a href="#papers">Paper</a></li>
+                <li><a href="#tarps">Tarp</a></li>
+                <li><a href="#clothes">Clothes</a></li>
+                <li><a href="#p3d">3D Print</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contacts</a></li>
+            <li class="header__line"></li>
+            <li>
+              <button>
+                <img src="images/cart.png" class="addtocart" />
+              </button>
+            </li>
+          </ul>
+          <div class="mobile__btn">
+            <button>
+              <img src="images/cart.png" class="addtocart__mobile" />
+            </button>
+            <buttton>
+              <img src="images/menu-button.png" class="menu__button" />
+            </buttton>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <div class="mobile__nav">
+      <nav>
+        <ul class="mobile__menu">
+          <li><a class="mobile__link" href="#top">Home</a></li>
+          <li><a class="mobile__link" href="#promos">Bundles</a></li>
+          <li class="mobile__print">
+            <a class="mobile__link" href="#offers">Prints</a>
+            <ul>
+              <li><a class="mobile__link" href="#papers">Paper</a></li>
+              <li><a class="mobile__link" href="#tarps">Tarp</a></li>
+              <li><a class="mobile__link" href="#clothes">Clothes</a></li>
+              <li><a class="mobile__link" href="#p3d">3D Print</a></li>
+            </ul>
+          </li>
+          <li><a class="mobile__link" href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main id="top">
+      <div class="page1 container">
+        <div class="grid1">
+          <section class="sliding">
+            <div class="img__slider">
+              <div class="slide active">
+                <img src="images/slide1.jpg" />
+                <div class="info">
+                  <p>Print Your Designed T-Shirt</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/slide2.jpg" />
+                <div class="info">
+                  <p>We Can Also Print On Pillows</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/slide3.jpg" />
+                <div class="info">
+                  <p>We Have Different Colors Of Tarpaulin</p>
+                </div>
+              </div>
+              <div class="slide">
+                <img src="images/slide4.jpg" />
+              </div>
+              <div class="slider__nav">
+                <button class="slider__btn active"></button>
+                <button class="slider__btn"></button>
+                <button class="slider__btn"></button>
+                <button class="slider__btn"></button>
+              </div>
+            </div>
+          </section>
+          <section class="bundle">
+            <h2 id="promos">Promo Bundles</h2>
+            <button class="bundle_pre_btn pre-btn">
+              <img src="images/next.png" />
+            </button>
+            <button class="bundle_nxt_btn nxt-btn">
+              <img src="images/next.png" />
+            </button>
+            <div class="promo slider snap_n_card">
+              <div class="promo__card">
+                <div class="promo__card__img">
+                  <h4>35% Off</h4>
+                  <img src="./images/hot-sale.png" />
+                </div>
+                <div class="promo__card__text">
+                  <h4>T-Shirt Print</h4>
+                  <p>4pcs. Full Front & 4pcs. Left Chest</p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="promo__card">
+                <div class="promo__card__img">
+                  <h4>25% Off</h4>
+                  <img src="./images/hot-sale.png" />
+                </div>
+                <div class="promo__card__text">
+                  <h4>50pcs. Postcard</h4>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="promo__card">
+                <div class="promo__card__img">
+                  <h4>15% Off</h4>
+                  <img src="./images/hot-sale.png" />
+                </div>
+                <div class="promo__card__text">
+                  <h4>Advertisement Poster</h4>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="promo__card">
+                <div class="promo__card__img">
+                  <h4>20% Off</h4>
+                  <img src="./images/hot-sale.png" />
+                </div>
+                <div class="promo__card__text">
+                  <h4>Self Portrait</h4>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="paper__prints">
+            <h2 id="papers">Paper</h2>
+            <div class="papers">
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Assortment of papers</li>
+                      <li>Custome sizes</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-banners.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Banner & Poster</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Professional, durable banners and posters to help you make a
+                    statement at every occassion.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Double-sided</li>
+                      <li>Variety of sizes</li>
+                      <li>Printed in full-color</li>
+                      <li>Multiple fold option</li>
+                      <li>Assortment of papers</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-brochures.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Brochures</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Professional brochures to represent your business, services
+                    and products.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>1x5" x 7"</li>
+                      <li>2" x 8"</li>
+                      <li>Color Options</li>
+                      <li>Coating Options</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-bookmarks.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Bookmarks</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Promotes study, education and your brand with custom printed
+                    bookmarks.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Double-sided</li>
+                      <li>Printed in full-color</li>
+                      <li>Folding and binding options</li>
+                      <li>Glossy, matte or silk finish</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-catalog.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Catalogs</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Create beautiful catalogs to showcase your products and
+                    deliver your message.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Multiple sizes</li>
+                      <li>Assortment of paper stock</li>
+                      <li>Printed in full-color</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-envelopes.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Envelopes</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Personalize custom printed envelopes to match your brand,
+                    message or event.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Full-color</li>
+                      <li>Black-and-white</li>
+                      <li>Variety of sizes</li>
+                      <li>Assortment of papers</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-flyers.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Flyers</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Effectively deliver your message with beautiful created,
+                    custom printed flyers.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Full-color</li>
+                      <li>Black-and-white</li>
+                      <li>Single sheet</li>
+                      <li>Multi-part carbonless</li>
+                      <li>Numbering</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-forms.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Forms</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Make a professional and polished impression with custom
+                    business forms.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Double-sided</li>
+                      <li>Printed in color</li>
+                      <li>Finish options</li>
+                      <li>Assortment of cardstock</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-greeting-cards.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Greeting Cards</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Create personalized greeting cards or invitations for every
+                    special occasion.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Full-color</li>
+                      <li>Folding</li>
+                      <li>Various sizes</li>
+                      <li>Assortment of papers</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-invitations.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Invitations</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    A custom printed and personalized invitation or announcement
+                    can make your special occasion even more special.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Full-color</li>
+                      <li>Black-and-white</li>
+                      <li>Various sizes</li>
+                      <li>Laminating</li>
+                      <li>Folding</li>
+                      <li>Assortment of papers</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-menu.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Menus</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    A recipe for success with our custom printed menus in a
+                    variety of sizes.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Double-sided</li>
+                      <li>Variety of sizes</li>
+                      <li>Printed in full-color</li>
+                      <li>Folding</li>
+                      <li>Assortment of papers</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-newsletters.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Newsletters</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Connect with customers and share your news with custo
+                    printed newsletters.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="papers__card">
+                <div class="papers__card__img">
+                  <div class="papers__card__description">
+                    <ul>
+                      <li>Full-color</li>
+                      <li>Double-sided</li>
+                      <li>Various sizes</li>
+                      <li>Assortment of papers</li>
+                      <li>Direct Mail</li>
+                    </ul>
+                  </div>
+                  <img src="./images/print-postcards.jpg" />
+                </div>
+                <div class="papers__card__text">
+                  <h4>Postcards</h4>
+                  <div class="papers__card__line"></div>
+                  <p>
+                    Personalize your announcement, invite or message with top
+                    quality postcards.
+                  </p>
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="grid2">
+          <section class="print">
+            <h2 id="offers" class="offer__title">Offer Prints</h2>
+            <p class="offer__subtitle">
+              There are many types of printing styles and services, and there
+              are plenty of different types of printing available in our shop
+              for your creation.
+            </p>
+            <div class="offer">
+              <div class="offer__card">
+                <div class="offer__card__img">
+                  <img src="./images/paper.jpg" />
+                </div>
+                <div class="offer__card__text">
+                  <h4>Paper</h4>
+                  <p>We have a lot of sizes, choose best for your design.</p>
+                  <a href="#paper" class="learnmore">learn more</a>
+                </div>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card__img">
+                  <img src="./images/tshirt.jpg" />
+                </div>
+                <div class="offer__card__text">
+                  <h4>Clothing</h4>
+                  <p>Display your creativity on what you wear.</p>
+                  <a href="#clothes" class="learnmore">learn more</a>
+                </div>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card__img">
+                  <img src="./images/tarp.png" />
+                </div>
+                <div class="offer__card__text">
+                  <h4>Tarpaulin</h4>
+                  <p>In tarpaulin, the world will see your message</p>
+                  <a href="#tarp" class="learnmore">learn more</a>
+                </div>
+              </div>
+              <div class="offer__card">
+                <div class="offer__card__img">
+                  <img src="./images/3d.jpg" />
+                </div>
+                <div class="offer__card__text">
+                  <h4>3D Print</h4>
+                  <p>Print your model in 3d</p>
+                  <a href="#3d" class="learnmore">learn more</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="page2 container">
+        <section class="tarp__prints">
+          <h4 id="tarps">Tarpaulin</h4>
+          <p>$1/square feet</p>
+          <div class="tarps">
+            <div class="tarp__card">
+              <div class="tarp__card__img">
+                <img src="./images/tarp.jpg" />
+              </div>
+              <div class="tarp__card__txt">
+                <h5>2 x 3</h5>
+                <p>junior</p>
+              </div>
+            </div>
+            <div class="tarp__card">
+              <div class="tarp__card__img">
+                <img src="./images/tarp.jpg" />
+              </div>
+              <div class="tarp__card__txt">
+                <h5>3 x 4</h5>
+                <p>senior</p>
+              </div>
+            </div>
+            <div class="tarp__card">
+              <div class="tarp__card__img">
+                <img src="./images/tarp.jpg" />
+              </div>
+              <div class="tarp__card__txt">
+                <h5>4 x 5</h5>
+                <p>master</p>
+              </div>
+            </div>
+            <div class="tarp__card">
+              <div class="tarp__card__img">
+                <img src="./images/tarp.jpg" />
+              </div>
+              <div class="tarp__card__txt">
+                <h5>5 x 6</h5>
+                <p>legend</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cloth__prints">
+          <h4 id="clothes">Clothing</h4>
+          <div class="clothes slider snap_n_card">
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/left_chest.png" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Left Chest</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>2.5" - 5" wide</li>
+                  <li>2.5" - 5" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/center_chest.jpg" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Center Chest</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>6" - 10" wide</li>
+                  <li>6" - 8" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/full_front.png" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Full Front</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>10" - 12" wide</li>
+                  <li>10" - 14" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/oversize_front.jpg" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Oversize Front</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>12" - 15" wide</li>
+                  <li>14" - 16" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/back_collar.jpg" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Back Collar</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>1" - 3" wide</li>
+                  <li>1" - 3" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/upper_back.png" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Upper Back</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>10" - 14" wide</li>
+                  <li>1" - 6" tall</li>
+                </ul>
+              </div>
+            </div>
+            <div class="cloth__card">
+              <div class="cloth__card__img">
+                <div class="cloth__card__description">
+                  <button class="addtocart__btn">
+                    <p>add to cart</p>
+                    <img src="images/cart.png" />
+                  </button>
+                </div>
+                <img src="./images/full_back.jpg" />
+              </div>
+              <div class="cloth__card__text">
+                <h4>Full Back</h4>
+                <div class="cloth__card__line"></div>
+                <ul>
+                  <li>10" - 14" wide</li>
+                  <li>6" - 15" tall</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>Available In</p>
+          <div class="cloth__grid">
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/chest_center.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>T-shirts</h5>
+              </div>
+            </div>
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/jacket1.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>Jackets</h5>
+              </div>
+            </div>
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/hoodie.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>Hoodies</h5>
+              </div>
+            </div>
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/longsleeve.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>Longsleeves</h5>
+              </div>
+            </div>
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/pants.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>Pants</h5>
+              </div>
+            </div>
+            <div class="cloth__grid__card">
+              <div class="cloth__grid__img">
+                <img src="images/hat.jpg" />
+              </div>
+              <div class="cloth__grid__text">
+                <h5>Hats</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="p3d__prints">
+          <h4 id="p3d">3D Print</h4>
+          <div class="p3d__print__card">
+            <div class="p3d__img">
+              <img src="images/3d_print.png" />
+            </div>
+            <div class="p3d__txt">
+              <h5>3D Printing</h5>
+              <p>
+                Custom solutions to meet your unique business needs. Let your
+                ideas take shape with 3D printing.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="logo">
+        <div class="logo__img">
+          <img src="images/logo_bnw.png" />
+        </div>
+        <div class="logo__text">
+          <h4>INKLING</h4>
+          <p>Printing Shop</p>
+        </div>
+      </section>
+      <div class="footer__line"></div>
+      <section class="socialpages">
+        <h4>Social Pages</h4>
+        <ul>
+          <li>
+            <img src="./images/facebook.png" />
+            <p>@inklingprintshop</p>
+          </li>
+          <li>
+            <img src="./images/twitter.png" />
+            <p>@InklingShop</p>
+          </li>
+          <li>
+            <img src="./images/tiktok.png" />
+            <p>inklingshop</p>
+          </li>
+          <li>
+            <img src="./images/instagram.png" />
+            <p>inklingprintshop</p>
+          </li>
+          <li>
+            <img src="./images/youtube.png" />
+            <p>@InklingPrintShop</p>
+          </li>
+          <li>
+            <img src="./images/pinterest.png" />
+            <p>@inklingshop</p>
+          </li>
+          <li>
+            <img src="./images/linkedin.png" />
+            <p>Inkling</p>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__line"></div>
+      <section class="addresses">
+        <h4>Contacts & Address</h4>
+        <ul>
+          <li>
+            <img src="./images/mail.png" />
+            <p>inklingshop@gmail.com</p>
+          </li>
+          <li>
+            <img src="./images/phone.png" />
+            <p>(047)443-5380</p>
+          </li>
+          <li>
+            <img src="./images/mobile.png" />
+            <p>(+63)920-292-6562</p>
+          </li>
+          <li>
+            <img src="./images/location.png" />
+            <p>Matain National Highway, Subic, Zamb.</p>
+          </li>
+          <li>
+            <img src="./images/mail.png" />
+            <p>Zipcode: 2209</p>
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>
+
+<!--
+<div class="info__expand">
+  <div class="info__condense">
+    <p class="goinfo">information</p>
+  </div>
+  <img src="images/information.png" class="info__btn" />
+</div>
+-->
