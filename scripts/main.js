@@ -174,11 +174,11 @@ function addToCart(elem) {
     }
     sibs.push(elem);
   }
-  const product = {
+  let product = {
     productname: getproductName,
     price: getprice,
   };
-  const stringProduct = JSON.stringify(product);
+  let stringProduct = JSON.stringify(product);
 
   if (!sessionStorage.getItem('cart')) {
     cart.push(stringProduct);
