@@ -3,8 +3,8 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "warn",
     "func-names": "off",
+    "no-unused-vars": "warn",
     "no-undef": "off",
     "prefer-arrow-callback": "off",
     "prefer-const": "off",

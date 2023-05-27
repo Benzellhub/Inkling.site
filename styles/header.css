@@ -12,6 +12,10 @@
     0 0 15px -1px var(--clr-slate600);
 }
 
+nav {
+  display: flex;
+}
+
 .header .logo {
   display: inline-flex;
 }
@@ -30,12 +34,9 @@
 }
 
 .menu {
-  float: right;
-  margin-right: var(--size-3xl);
-}
-
-.menu__bar {
-  margin-top: var(--size-xl);
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
 
 .menu__bar li {
@@ -52,7 +53,7 @@
   text-decoration: none;
   font-size: var(--size-base);
   font-weight: 600;
-  padding: var(--size-xs) var(--size-s);
+  padding: 0 var(--size-s);
   text-transform: uppercase;
 }
 
@@ -60,7 +61,7 @@
   display: none;
   position: absolute;
   width: 145px;
-  height: 200px;
+  height: 140px;
   border-radius: 5px;
 }
 
@@ -95,7 +96,7 @@
 
 .addtocart {
   margin-left: 12px;
-  width: var(--size-l);
+  width: var(--size-xl);
 }
 
 .mobile__btn {
@@ -119,9 +120,8 @@
 
   .mobile__btn {
     display: flex;
-    float: right;
     gap: 1.5rem;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
   }
 
   .menu__button {

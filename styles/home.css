@@ -408,9 +408,15 @@ button {
   text-shadow: 1px 1px 2px var(--clr-grey);
 }
 
+.papers__card__text h5 {
+  font-size: var(--size-xl);
+  font-weight: 600;
+  color: var(--clr-navy);
+  align-self: self-start;
+}
+
 .papers__card__text > p {
   padding: 0.8rem 0.5rem;
-  font-size: var(--size-base);
 }
 
 .papers__card__line {
@@ -474,24 +480,6 @@ button {
   object-fit: cover;
 }
 
-.cloth__card__description {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-}
-
-.cloth__card__description .addtocart__btn {
-  position: absolute;
-  left: 35%;
-  bottom: 40%;
-  z-index: 777;
-}
-
-.cloth__card__description:hover {
-  opacity: 1;
-}
-
 .cloth__card__text {
   position: relative;
   width: 100%;
@@ -518,10 +506,16 @@ button {
   color: var(--clr-slate600);
 }
 
-.cloth__prints p {
-  font-size: var(--size-2xl);
+.cloth__prints h5 {
+  font-size: var(--size-xl);
   color: var(--clr-navy);
   font-weight: 600;
+}
+
+.cloth__card__text .addtocart__btn {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
 }
 
 .cloth__grid {

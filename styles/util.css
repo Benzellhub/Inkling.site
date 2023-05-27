@@ -28,19 +28,16 @@ body::-webkit-scrollbar-thumb {
   padding: 0.25em 0.5em;
   border: 1px solid var(--clr-slate600);
   border-radius: 6px;
-}
-
-.addtocart__btn:hover {
-  background: var(--clr-rose);
-  border: 1px solid var(--clr-rose);
-}
-
-.addtocart__btn p {
   font-size: var(--size-s);
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--clr-slate800);
   text-transform: uppercase;
+}
+
+.addtocart__btn:hover {
+  background: var(--clr-rose);
+  border: 1px solid var(--clr-rose);
 }
 
 .addtocart__btn p:hover {
