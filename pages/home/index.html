@@ -74,6 +74,37 @@
         </ul>
       </nav>
     </div>
+    <div class="addtocartpg container">
+      <h1>Currently in Your Shopping Cart</h1>
+      <div id="notif"></div>
+      <div class="cart__container">
+        <table>
+          <thead>
+            <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+          </thead>
+          <tbody id="cart__table"></tbody>
+        </table>
+        <hr />
+        <table id="cart__totals">
+          <tr>
+            <td><strong>Items</strong></td>
+            <td><strong>Total</strong></td>
+          </tr>
+          <tr>
+            <td>x<span id="items__quantity">0</span></td>
+            <td>$<span id="total">0</span></td>
+          </tr>
+        </table>
+        <div class="cart__btns">
+          <button id="upload" class="upload btn">Upload File</button>
+          <button id="emptycart" class="emptycart btn">Empty Cart</button>
+          <button id="checkout" class="checkout btn">Checkout</button>
+        </div>
+      </div>
+    </div>
     <main id="top">
       <div class="page1 container">
         <div class="grid1">
