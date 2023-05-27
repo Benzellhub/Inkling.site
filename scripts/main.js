@@ -3,6 +3,8 @@ import '../styles/header.css';
 import '../styles/footer.css';
 import '../styles/util.css';
 
+updateCartTotal();
+
 const slides = document.querySelectorAll('.slide');
 const btns = document.querySelectorAll('.slider__btn');
 let currentSlide = 1;
@@ -77,7 +79,7 @@ const mobileLinks = document.querySelectorAll('.mobile__link');
 let isMobileNavOpen = false;
 
 cartPg.addEventListener('click', () => {
-  location.href = '../cart/index.html';
+  location.href = 'cart.html';
 });
 
 headerBtn.addEventListener('click', () => {
@@ -148,8 +150,6 @@ function easeInOutCubic(t, b, c, d) {
   return (c / 2) * (t * t * t + 2) + b;
 }
 
-updateCartTotal();
-
 document.getElementById('emptycart').addEventListener('click', emptyCart);
 const cartBtns = document.getElementsByClassName('addtocart__btn');
 for (let i = 0; i < cartBtns.length; i++) {
@@ -203,7 +203,7 @@ function updateCartTotal() {
   let productname = '';
   let carttable = '';
   if (sessionStorage.getItem('cart')) {
-    var cart = JSON.parse(sessionStorage.getItem('cart'));
+    const cart = JSON.parse(sessionStorage.getItem('cart'));
     items = cart.length;
     for (let i = 0; i < items; i++) {
       const x = JSON.parse(cart[i]);

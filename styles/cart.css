@@ -55,7 +55,7 @@ button {
   cursor: pointer;
 }
 
-main {
+.addtocartpg {
   margin-top: 40px;
   background: var(--clr-sky);
   border-radius: 20px;
