@@ -1,19 +1,19 @@
 updateCartTotal();
 
 document.getElementById('emptycart').addEventListener('click', emptyCart);
-const cartBtns = document.getElementsByClassName('addtocart__btn');
-for (let i = 0; i < cartBtns.length; i += 1) {
+var cartBtns = document.getElementsByClassName('addtocart__btn');
+for (var i = 0; i < cartBtns.length; i += 1) {
   cartBtns[i].addEventListener('click', function () {
     addToCart(this);
   });
 }
 
 function addToCart(elem) {
-  let sibs = [];
-  let getprice;
-  let getproductName;
-  let cart = [];
-  let stringCart;
+  var sibs = [];
+  var getprice;
+  var getproductName;
+  var cart = [];
+  var stringCart;
   while ((elem = elem.previousSibling)) {
     if (elem.nodeType === 3) continue;
     if (elem.className == 'price') {
@@ -24,11 +24,11 @@ function addToCart(elem) {
     }
     sibs.push(elem);
   }
-  const product = {
+  var product = {
     productname: getproductName,
     price: getprice,
   };
-  const stringProduct = JSON.stringify(product);
+  var stringProduct = JSON.stringify(product);
 
   if (!sessionStorage.getItem('cart')) {
     cart.push(stringProduct);
@@ -47,16 +47,16 @@ function addToCart(elem) {
 }
 
 function updateCartTotal() {
-  let total = 0;
-  let price = 0;
-  let items = 0;
-  let productname = '';
-  let carttable = '';
+  var total = 0;
+  var price = 0;
+  var items = 0;
+  var productname = '';
+  var carttable = '';
   if (sessionStorage.getItem('cart')) {
-    const cart = JSON.parse(sessionStorage.getItem('cart'));
+    var cart = JSON.parse(sessionStorage.getItem('cart'));
     items = cart.length;
     for (let i = 0; i < items; i += 1) {
-      let x = JSON.parse(cart[i]);
+      var x = JSON.parse(cart[i]);
       price = parseFloat(x.price.split('$')[1]);
       productname = x.productname;
       carttable += `<tr><td>${productname}</td><td>$${price.toFixed(
@@ -71,8 +71,8 @@ function updateCartTotal() {
 }
 
 function addedToCart(pname) {
-  const message = `${pname} was added to the cart`;
-  const alerts = document.getElementById('alerts');
+  var message = `${pname} was added to the cart`;
+  var alerts = document.getElementById('alerts');
   alerts.innerHTML = message;
   if (!alerts.classList.contains('message')) {
     alerts.classList.add('message');
@@ -83,7 +83,7 @@ function emptyCart() {
   if (sessionStorage.getItem('cart')) {
     sessionStorage.removeItem('cart');
     updateCartTotal();
-    const alerts = document.getElementById('alerts');
+    var alerts = document.getElementById('alerts');
     alerts.innerHTML = '';
     if (alerts.classList.contains('message')) {
       alerts.classList.remove('message');
