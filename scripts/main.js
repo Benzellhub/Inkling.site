@@ -203,10 +203,10 @@ function updateCartTotal() {
   let productname = '';
   let carttable = '';
   if (sessionStorage.getItem('cart')) {
-    const cart = JSON.parse(sessionStorage.getItem('cart'));
+    let cart = JSON.parse(sessionStorage.getItem('cart'));
     items = cart.length;
     for (let i = 0; i < items; i++) {
-      const x = JSON.parse(cart[i]);
+      let x = JSON.parse(cart[i]);
       price = parseFloat(x.price.split('$')[1]);
       productname = x.productname;
       carttable += `<tr><td>${productname}</td><td>$${price.toFixed(
