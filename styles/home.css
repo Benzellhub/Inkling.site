@@ -55,6 +55,7 @@ button {
   background: none;
   cursor: pointer;
 }
+
 .addtocartpg {
   margin-top: 40px;
   background: var(--clr-sky);
@@ -128,6 +129,7 @@ strong {
   background: var(--clr-grey);
   color: var(--clr-navy);
 }
+
 .sliding {
   display: flex;
   justify-content: center;

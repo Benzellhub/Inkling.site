@@ -40,6 +40,7 @@ nav {
 }
 
 .menu__bar li {
+  position: relative;
   display: inline-block;
   list-style: none;
 }
@@ -99,6 +100,23 @@ nav {
   width: var(--size-xl);
 }
 
+.menu__bar li span {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--clr-rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: var(--clr-light);
+  font-size: var(--size-s);
+  font-weight: 600;
+}
+
 .mobile__btn {
   display: none;
 }
@@ -130,6 +148,21 @@ nav {
 
   .addtocart__mobile {
     width: var(--size-l);
+  }
+
+  .mobile__btn span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--clr-rose);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color: var(--clr-light);
+    font-size: var(--size-s);
+    font-weight: 600;
   }
 }
 @media (max-width: 425px) {
