@@ -221,8 +221,8 @@ function updateCartTotal() {
 }
 
 function addedToCart(pname) {
-  const message = pname + ' was added to the cart';
-  const notif = document.getElementById('notif');
+  let message = pname + ' was added to the cart';
+  let notif = document.getElementById('notif');
   notif.innerHTML = message;
   if (!notif.classList.contains('message')) {
     notif.classList.add('message');
@@ -233,7 +233,7 @@ function emptyCart() {
   if (sessionStorage.getItem('cart')) {
     sessionStorage.removeItem('cart');
     updateCartTotal();
-    const notif = document.getElementById('notif');
+    let notif = document.getElementById('notif');
     notif.innerHTML = '';
     if (notif.classList.contains('message')) {
       notif.classList.remove('message');
