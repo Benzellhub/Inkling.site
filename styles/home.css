@@ -56,10 +56,6 @@ button {
   cursor: pointer;
 }
 
-.addtocartpg {
-  display: none;
-}
-
 .sliding {
   display: flex;
   justify-content: center;
